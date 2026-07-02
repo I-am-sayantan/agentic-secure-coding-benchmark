@@ -67,6 +67,7 @@ brainbrowser_assignment/
 We recommend creating a virtual environment before installing dependencies:
 
 ### Windows (PowerShell)
+
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -74,6 +75,7 @@ python -m pip install pytest
 ```
 
 ### macOS / Linux (bash)
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
