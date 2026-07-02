@@ -193,32 +193,13 @@ Every vulnerability class implemented here falls within the CWE sets these works
 required task's CVE is exactly the kind of real vulnerability-fixing commit the first reference
 curates.
 
-1. **Zhao, Wang, Li, et al. — _SusVibes: Benchmarking Vulnerability of Agent-Generated Code in
-   Real-World Tasks_** (2025). arXiv:2512.03262. The methodology this repository reproduces by
-   hand: 200 tasks mined from real vulnerability-fixing commits across 108 open-source projects,
-   spanning **77 CWEs**, graded on functional correctness *and* security.
-   <https://github.com/LeiLiLab/susvibes>
-
-2. **Pearce, Ahmad, Tan, Dolan-Gavitt, Karri — _Asleep at the Keyboard? Assessing the Security of
-   GitHub Copilot's Code Contributions_** (IEEE S&P 2022). arXiv:2108.09293. Evaluates Copilot
-   across MITRE's **CWE Top-25**, including path traversal (CWE-22), OS command injection
-   (CWE-78), XSS (CWE-79), SQL injection (CWE-89), deserialization (CWE-502), hardcoded
-   credentials (CWE-798), XXE (CWE-611) and SSRF (CWE-918).
-
-3. **Perry, Srivastava, Kumar, Boneh — _Do Users Write More Insecure Code with AI Assistants?_**
-   (ACM CCS 2023). arXiv:2211.03622. User study showing developers with an AI assistant produced
-   more SQL-injection (CWE-89) and weaker-cryptography (CWE-327) bugs *while believing their code
-   was more secure* — the exact "blind spot" this benchmark is built to expose.
-
-4. **Bhatt et al. — _Purple Llama CyberSecEval: A Secure Coding Benchmark for Language Models_**
-   (Meta AI, 2023). arXiv:2312.04724. LLM secure-coding benchmark whose Insecure-Code Detector
-   spans ~50 CWEs, including command/code injection (CWE-78 / CWE-94), weak cryptography
-   (CWE-327) and improper certificate validation (CWE-295).
-
-5. **Siddiq & Santos — _SecurityEval Dataset: Mining Vulnerability Examples to Evaluate
-   ML-Based Code-Generation Techniques_** (MSR4P&S 2022). 130 prompts across **75 CWEs**,
-   giving broad per-CWE coverage of the remaining classes here (e.g. ReDoS CWE-1333, insecure
-   randomness CWE-330, missing authorization CWE-639).
+| Paper / Work | Authors (Year) | Description | Links |
+|--------------|----------------|-------------|-------|
+| **SusVibes: Benchmarking Vulnerability of Agent-Generated Code in Real-World Tasks** | Zhao, Wang, Li, et al. (2025) | The methodology this repository reproduces by hand: 200 tasks mined from real vulnerability-fixing commits across 108 open-source projects, spanning **77 CWEs**, graded on functional correctness *and* security. | [arXiv:2512.03262](https://arxiv.org/abs/2512.03262)<br>[GitHub](https://github.com/LeiLiLab/susvibes) |
+| **Asleep at the Keyboard? Assessing the Security of GitHub Copilot's Code Contributions** | Pearce, Ahmad, Tan, Dolan-Gavitt, Karri (2022) | Evaluates Copilot across MITRE's **CWE Top-25**, including path traversal (CWE-22), OS command injection (CWE-78), XSS (CWE-79), SQL injection (CWE-89), deserialization (CWE-502), hardcoded credentials (CWE-798), XXE (CWE-611) and SSRF (CWE-918). | [arXiv:2108.09293](https://arxiv.org/abs/2108.09293) |
+| **Do Users Write More Insecure Code with AI Assistants?** | Perry, Srivastava, Kumar, Boneh (2023) | User study showing developers with an AI assistant produced more SQL-injection (CWE-89) and weaker-cryptography (CWE-327) bugs *while believing their code was more secure* — the exact "blind spot" this benchmark is built to expose. | [arXiv:2211.03622](https://arxiv.org/abs/2211.03622) |
+| **Purple Llama CyberSecEval: A Secure Coding Benchmark for Language Models** | Bhatt et al. (Meta AI, 2023) | LLM secure-coding benchmark whose Insecure-Code Detector spans ~50 CWEs, including command/code injection (CWE-78 / CWE-94), weak cryptography (CWE-327) and improper certificate validation (CWE-295). | [arXiv:2312.04724](https://arxiv.org/abs/2312.04724) |
+| **SecurityEval Dataset: Mining Vulnerability Examples to Evaluate ML-Based Code-Generation Techniques** | Siddiq & Santos (2022) | 130 prompts across **75 CWEs**, giving broad per-CWE coverage of the remaining classes here (e.g. ReDoS CWE-1333, insecure randomness CWE-330, missing authorization CWE-639). | |
 
 **How the referenced work covers every CWE implemented here**
 
